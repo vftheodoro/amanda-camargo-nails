@@ -1,0 +1,199 @@
+.announcement {
+  background: #644635;
+  color: #fff7ed;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 0.09em;
+  padding: 8px 20px;
+}
+.announcement span {
+  color: #e9d7c3;
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: #fbf6f0f5;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e7dbcf;
+}
+.header-inner {
+  min-height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  white-space: nowrap;
+  width: max-content;
+}
+.brand > span {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 25px;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+  color: #674531;
+  line-height: 1.3;
+}
+.brand-heart {
+  display: inline-block;
+  transform: rotate(-18deg);
+  font-family: Georgia, serif;
+  font-size: 22px;
+  margin-left: 5px;
+}
+.brand small {
+  font-size: 7px;
+  letter-spacing: 0.43em;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+.desktop-nav {
+  display: flex;
+  gap: 30px;
+  font-size: 11px;
+}
+.desktop-nav a {
+  padding-block: 12px;
+  position: relative;
+}
+.desktop-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #9d7550;
+  transition: width 0.2s;
+}
+.desktop-nav a:hover::after {
+  width: 100%;
+}
+.header-booking {
+  min-height: 42px;
+  padding: 11px 17px;
+}
+.header-booking > svg:last-child {
+  display: none;
+}
+.mobile-nav {
+  display: none;
+}
+.site-footer {
+  background: #eee3d8;
+  border-top: 1px solid #dccab7;
+  padding-top: 60px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 60px;
+  padding-bottom: 50px;
+}
+.site-footer .brand > span {
+  font-size: 27px;
+}
+.site-footer .brand small {
+  font-size: 6px;
+}
+.site-footer p {
+  font-size: 11px;
+  color: #705f51;
+  line-height: 1.95;
+  margin-top: 18px;
+}
+.site-footer .social-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 20px;
+  font-size: 10px;
+}
+.social-link svg {
+  width: 16px;
+  height: 16px;
+}
+.site-footer h2 {
+  font-family: var(--font-body), sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.footer-grid > div:nth-child(2) > a {
+  display: block;
+  font-size: 11px;
+  color: #705f51;
+  width: max-content;
+  margin-top: 10px;
+}
+.footer-grid > div:nth-child(3) > a {
+  font-size: 11px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.site-footer a:hover {
+  color: #936538;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0 25px;
+  border-top: 1px solid #d6c4b2;
+  font-size: 9px;
+  color: #715f50;
+}
+.whatsapp-float {
+  position: fixed;
+  z-index: 25;
+  bottom: 22px;
+  right: 22px;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background: #5d4838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 20px #34231e30;
+  border: 1px solid #d3b69a;
+  transition: background 0.2s;
+}
+.whatsapp-float:hover {
+  background: #352519;
+}
+.whatsapp-float svg {
+  width: 23px;
+  height: 23px;
+}
+.whatsapp-float span {
+  position: absolute;
+  right: 60px;
+  white-space: nowrap;
+  background: #fffaf5;
+  color: #5b4030;
+  border: 1px solid #dcc8b2;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-size: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.whatsapp-float:hover span,
+.whatsapp-float:focus-visible span {
+  opacity: 1;
+}
