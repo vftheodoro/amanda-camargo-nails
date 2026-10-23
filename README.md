@@ -46,6 +46,8 @@ As fotos da galeria foram baixadas do Instagram profissional indicado pelo solic
 
 O retrato editorial foi editado por IA a partir desse retrato; monograma e textura decorativa foram gerados por IA. A galeria não utiliza unhas geradas. As imagens foram convertidas para WebP sem modificar o resultado dos serviços.
 
+A atualização visual acrescenta um segundo retrato editorial claro, flores e esmalte em aquarela com transparência e uma comparação de estilos gerada com IA. A comparação está identificada como ilustração, separada do portfólio real, e pode ser explorada por slider ou pelos botões Antes/Depois. O header flutua sobre a página, sem faixa superior. As animações são discretas e respeitam redução de movimento; não há biblioteca adicional de animação.
+
 Todos os ativos finais necessários estão versionados em `public`; o build não depende de arquivos externos ou de acesso ao Instagram. Para preparar novas fotos: `node scripts/optimize-image.mjs caminho-da-foto nome-da-foto.webp 1200`. O script preserva a proporção e não amplia fotos pequenas.
 
 ## Publicação

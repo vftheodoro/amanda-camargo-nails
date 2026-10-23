@@ -9,12 +9,20 @@ export function About() {
         <div className="about-visual">
           <div className="about-photo">
             <Image
-              src="/images/amanda-original.webp"
-              alt="Retrato original de Amanda Camargo"
+              src="/images/amanda-acolhedora.webp"
+              alt="Retrato editorial de Amanda Camargo em tons claros"
               fill
               sizes="(max-width: 760px) 90vw, 40vw"
             />
           </div>
+          <Image
+            className="about-botanical"
+            src="/images/botanical-sticker.webp"
+            alt=""
+            width={190}
+            height={240}
+            aria-hidden="true"
+          />
           <span className="about-signature" aria-hidden="true">
             Com carinho,
             <br />

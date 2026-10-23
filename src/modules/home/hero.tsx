@@ -7,6 +7,14 @@ export function Hero() {
   return (
     <section className="hero">
       <div className="container hero-inner">
+        <Image
+          className="hero-botanical"
+          src="/images/botanical-sticker.webp"
+          alt=""
+          width={180}
+          height={230}
+          aria-hidden="true"
+        />
         <div className="hero-copy">
           <p className="eyebrow">
             <Icon name="sparkle" className="small-star" /> Nail designer em

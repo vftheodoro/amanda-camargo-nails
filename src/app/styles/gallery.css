@@ -1,5 +1,5 @@
 .portfolio-section {
-  background: #fffaf5;
+  background: #fffdfb;
 }
 .gallery-grid {
   display: grid;
@@ -24,7 +24,7 @@
   position: relative;
   aspect-ratio: 3/4;
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 20px;
   background: #ecdccc;
 }
 .gallery-image img {
@@ -96,8 +96,8 @@
   background: #ecdccc;
 }
 .gallery-filters button[aria-pressed="true"] {
-  background: #6f4936;
-  border-color: #6f4936;
+  background: #efd2c9;
+  border-color: #efd2c9;
   color: white;
 }
 .portfolio-footer {
@@ -143,7 +143,7 @@
 .dialog-image {
   position: relative;
   height: min(70dvh, 650px);
-  background: #f0e2d8;
+  background: #f8e9e3;
 }
 .dialog-image img {
   object-fit: contain;
@@ -154,9 +154,9 @@
   top: 15px;
   width: 40px;
   height: 40px;
-  border: 1px solid #ded0c4;
-  background: #fbf6f0;
-  color: #34231e;
+  border: 1px solid #ecddd5;
+  background: #fffaf7;
+  color: #59433f;
   border-radius: 50%;
   z-index: 2;
   font-size: 25px;

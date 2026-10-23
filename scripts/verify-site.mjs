@@ -17,6 +17,20 @@ for (const route of routes) {
   const response = await fetch(`${base}${route}`);
   assert.equal(response.status, 200, route);
   const html = await response.text();
+  assert.ok(
+    !html.includes('class="announcement"'),
+    `Faixa superior removida: ${route}`,
+  );
+  if (route === "/") {
+    assert.ok(
+      html.includes("Comparar antes e depois ilustrativos"),
+      "Comparador acessível",
+    );
+    assert.ok(
+      html.includes("Comparação ilustrativa criada com IA"),
+      "Origem do antes e depois identificada",
+    );
+  }
   assert.equal(
     (html.match(/<h1(?:\s|>)/g) || []).length,
     1,

@@ -1,0 +1,518 @@
+.hero-botanical {
+  position: absolute;
+  width: 165px;
+  height: auto;
+  left: -38px;
+  bottom: 15px;
+  z-index: 2;
+  opacity: 0.63;
+  pointer-events: none;
+  transform: rotate(-24deg);
+}
+.about-botanical {
+  position: absolute;
+  right: -72px;
+  bottom: 12px;
+  width: 180px;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+  transform: rotate(13deg);
+}
+.inspiration-section {
+  position: relative;
+  overflow: clip;
+  background:
+    radial-gradient(ellipse at 7% 20%, #f9eae7 0%, transparent 45%), #fffaf7;
+}
+.inspiration-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 100px;
+  align-items: center;
+}
+.inspiration-copy {
+  position: relative;
+}
+.inspiration-copy > p:not(.eyebrow) {
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.95;
+  max-width: 440px;
+}
+.polish-illustration {
+  margin-bottom: 22px;
+}
+.polish-illustration img {
+  width: 140px;
+  height: auto;
+  transform: rotate(-9deg);
+}
+.inspiration-chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 27px 0;
+}
+.inspiration-chips span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: #f6e9e2;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 10px;
+  color: #79584e;
+}
+.inspiration-chips svg {
+  width: 15px;
+  height: 15px;
+}
+.inspiration-copy > .text-link {
+  display: flex;
+  width: max-content;
+  margin-top: 15px;
+}
+.comparison-widget {
+  min-width: 0;
+}
+.comparison-stage {
+  touch-action: pan-y;
+  cursor: ew-resize;
+  user-select: none;
+  aspect-ratio: 3/4;
+  position: relative;
+  overflow: hidden;
+  border-radius: 160px 160px 35px 35px;
+  background: #f4ebe5;
+  isolation: isolate;
+  box-shadow: 0 18px 55px #bc8e7c12;
+}
+.comparison-view {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.comparison-after {
+  z-index: 0;
+}
+.comparison-before {
+  z-index: 1;
+}
+.comparison-diptych {
+  width: 200% !important;
+  max-width: none !important;
+  height: 100% !important;
+  object-fit: fill;
+  right: auto !important;
+}
+.comparison-right {
+  left: -100% !important;
+}
+.comparison-left {
+  left: 0 !important;
+}
+.comparison-label {
+  position: absolute;
+  top: 30px;
+  font-size: 10px;
+  color: #644b43;
+  background: #fffdf4e8;
+  padding: 7px 15px;
+  border-radius: 999px;
+  z-index: 2;
+}
+.comparison-label-before {
+  left: 25%;
+  transform: translateX(-50%);
+}
+.comparison-label-after {
+  right: 25%;
+  transform: translateX(50%);
+}
+.comparison-ai-label {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  white-space: nowrap;
+  font-size: 9px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #fffaf5ed;
+  color: #715b51;
+}
+.comparison-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #fffaf8;
+  z-index: 3;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.comparison-divider > span {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #fffaf6;
+  box-shadow: 0 4px 20px #92624d20;
+  color: #a47564;
+}
+.comparison-controls {
+  padding: 20px 5px 0;
+}
+.comparison-controls > label {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  color: #775a4f;
+  margin-bottom: 10px;
+}
+.comparison-controls input {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  accent-color: #ab7a6b;
+  cursor: ew-resize;
+}
+.comparison-presets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 9px;
+  color: #806a5f;
+}
+.comparison-presets > button {
+  border: 0;
+  background: #f3e5df;
+  color: #6b5147;
+  border-radius: 999px;
+  padding: 9px 16px;
+  min-height: 40px;
+  font-size: 10px;
+  transition: background 0.2s;
+}
+.comparison-presets > button:hover {
+  background: #e9d5cb;
+}
+.comparison-presets > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.comparison-disclosure {
+  font-size: 10px;
+  color: #76635e;
+  line-height: 1.8;
+  margin-top: 16px;
+  text-align: center;
+}
+.gallery-dialog .dialog-card {
+  border-radius: 26px;
+  overflow: hidden;
+}
+.dialog-image {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.gallery-filters button[aria-pressed="true"] {
+  color: #65453e;
+}
+.page-intro,
+.service-detail-intro {
+  border-bottom: 0;
+  border-radius: 0 0 45px 45px;
+}
+.not-found {
+  padding-top: 160px;
+}
+
+@keyframes welcome-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes botanical-sway {
+  0%,
+  100% {
+    transform: rotate(-24deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-20deg) translateY(-6px);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mobile-nav[open] nav,
+  .gallery-dialog[open] .dialog-card,
+  .faq-list details[open] > p {
+    animation: welcome-in 0.28s cubic-bezier(0.2, 0.65, 0.3, 1) both;
+  }
+  .hero-copy {
+    animation: welcome-in 0.65s cubic-bezier(0.2, 0.65, 0.3, 1) both;
+  }
+  .hero-botanical {
+    animation: botanical-sway 4.8s ease-in-out 1;
+  }
+  .button-primary > svg:last-child {
+    transition: transform 0.2s ease-out;
+  }
+  .button-primary:hover > svg:last-child {
+    transform: translateX(3px);
+  }
+  @supports (animation-timeline: view()) {
+    .polish-illustration img,
+    .about-photo {
+      animation: welcome-in 0.6s cubic-bezier(0.2, 0.65, 0.3, 1) both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 65%;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .inspiration-layout {
+    gap: 55px;
+  }
+  .site-header {
+    width: calc(100% - 40px);
+  }
+  .header-inner.container {
+    padding-inline: 22px;
+    gap: 20px;
+  }
+  .hero-botanical {
+    width: 130px;
+    opacity: 0.4;
+  }
+}
+@media (max-width: 900px) {
+  .header-inner.container {
+    padding-inline: 18px;
+    gap: 16px;
+  }
+  .desktop-nav {
+    gap: 17px;
+  }
+  .inspiration-layout {
+    gap: 35px;
+  }
+  .comparison-label {
+    top: 18px;
+    font-size: 9px;
+  }
+  .comparison-label-before {
+    left: 25%;
+  }
+  .comparison-label-after {
+    right: 25%;
+  }
+  .about-botanical {
+    width: 145px;
+    right: -45px;
+  }
+}
+@media (max-width: 760px) {
+  .site-header {
+    top: 12px;
+    width: calc(100% - 24px);
+    border-radius: 24px;
+  }
+  .header-inner.container {
+    min-height: 70px;
+    padding-inline: 18px;
+  }
+  .brand > span {
+    font-size: 22px;
+  }
+  .mobile-nav summary {
+    background: #f8ebe4;
+    border: 0;
+  }
+  .mobile-nav nav {
+    border: 1px solid #fff;
+    border-radius: 24px;
+    top: 53px;
+    box-shadow: 0 12px 35px #99726818;
+    background: #fffdf9f7;
+    overflow: hidden;
+  }
+  .hero {
+    padding-top: 90px;
+    margin: 7px;
+    border-radius: 29px;
+  }
+  .hero-inner.container {
+    width: 100%;
+  }
+  .hero-portrait {
+    border-radius: 22px;
+    margin: 0 10px;
+    width: calc(100% - 20px);
+    height: 300px;
+  }
+  .hero-copy {
+    padding: 36px 22px 38px;
+  }
+  .hero-work {
+    top: 184px;
+    right: 21px;
+    border-radius: 20px;
+  }
+  .hero-work-image {
+    border-radius: 15px;
+  }
+  .hero-botanical {
+    left: auto;
+    right: -28px;
+    bottom: 18px;
+    width: 115px;
+    opacity: 0.34;
+    z-index: 0;
+  }
+  .hero-copy .eyebrow {
+    font-size: 7px;
+  }
+  .hero-description {
+    font-size: 13px;
+  }
+  .hero-secondary {
+    font-size: 12px;
+  }
+  .hero-buttons .button {
+    max-width: none;
+  }
+  .about-section,
+  .faq-section {
+    margin-inline: 7px;
+    border-radius: 34px;
+  }
+  .about-botanical {
+    width: 140px;
+    right: -48px;
+    bottom: 25px;
+  }
+  .about-photo {
+    border-radius: 150px 150px 32px 32px;
+  }
+  .about-caption {
+    border-radius: 20px;
+  }
+  .about-signature {
+    z-index: 3;
+    bottom: 65px;
+  }
+  .service-card {
+    border-radius: 25px;
+    padding: 7px;
+  }
+  .service-photo {
+    border-radius: 19px;
+  }
+  .service-card-body {
+    padding: 15px 8px 12px;
+  }
+  .service-card h3 {
+    font-size: 18px;
+  }
+  .round-arrow {
+    width: 20px;
+    height: 20px;
+  }
+  .service-card p {
+    font-size: 11px;
+    min-height: 54px;
+  }
+  .service-price {
+    font-size: 10px;
+  }
+  .quote-banner {
+    margin-inline: 10px;
+    border-radius: 32px;
+  }
+  .appointment-card {
+    border-radius: 150px 150px 34px 34px;
+  }
+  .page-intro {
+    padding-top: 120px;
+    border-radius: 0 0 34px 34px;
+  }
+  .service-detail-intro {
+    padding-top: 120px;
+    border-radius: 0 0 34px 34px;
+  }
+  .inspiration-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .inspiration-copy > p:not(.eyebrow) {
+    font-size: 12px;
+    max-width: none;
+  }
+  .inspiration-copy > h2 {
+    font-size: 38px;
+  }
+  .polish-illustration {
+    margin-bottom: 15px;
+  }
+  .polish-illustration img {
+    width: 115px;
+  }
+  .inspiration-chips {
+    gap: 8px;
+    margin: 22px 0;
+  }
+  .inspiration-chips span {
+    font-size: 9px;
+    padding: 8px 10px;
+  }
+  .comparison-widget {
+    max-width: 450px;
+    width: 100%;
+    margin-inline: auto;
+  }
+  .comparison-stage {
+    border-radius: 125px 125px 28px 28px;
+  }
+  .comparison-label {
+    top: 25px;
+  }
+  .comparison-label-before {
+    left: 25%;
+  }
+  .comparison-label-after {
+    right: 25%;
+  }
+  .comparison-presets > button {
+    min-height: 44px;
+  }
+  .gallery-image {
+    border-radius: 22px;
+  }
+  .not-found {
+    padding-top: 130px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy,
+  .hero-botanical,
+  .polish-illustration img {
+    animation: none !important;
+    opacity: 1;
+  }
+}

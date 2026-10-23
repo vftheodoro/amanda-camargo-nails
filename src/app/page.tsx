@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Hero } from "@/modules/home/hero";
 import { About } from "@/modules/home/about";
 import { HowItWorks } from "@/modules/home/how-it-works";
+import { InspirationSection } from "@/modules/inspiration/inspiration-section";
 import { ServiceCards } from "@/modules/services/service-cards";
 import { Gallery } from "@/modules/gallery/gallery";
 import { ContactSection } from "@/modules/contact/contact-section";
@@ -74,6 +75,7 @@ export default function Home() {
         </div>
       </section>
       <About />
+      <InspirationSection />
       <section className="section portfolio-section" id="galeria">
         <div className="container">
           <div className="section-heading-row">

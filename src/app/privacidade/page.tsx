@@ -49,9 +49,12 @@ export default function PrivacyPage() {
         <h2>Fotografias</h2>
         <p>
           A galeria apresenta trabalhos reais publicados no perfil profissional
-          de Amanda. O retrato editorial de apresentação foi preparado com
-          auxílio de inteligência artificial a partir de uma fotografia de
-          Amanda. Ele não representa um resultado de serviço.
+          de Amanda. Os retratos editoriais foram preparados com auxílio de
+          inteligência artificial a partir de uma fotografia de Amanda. A
+          comparação de antes e depois é uma ilustração gerada com IA para
+          visualizar estilos, identificada junto à imagem. Esses materiais não
+          representam registros de atendimentos reais. A galeria de trabalhos
+          utiliza fotografias reais.
         </p>
         <h2>Seus dados e seu contato</h2>
         <p>

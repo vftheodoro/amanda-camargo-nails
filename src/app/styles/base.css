@@ -1,19 +1,19 @@
 @theme inline {
-  --color-ivory: #fbf6f0;
-  --color-nude: #f0e2d8;
-  --color-espresso: #34231e;
-  --color-champagne: #b58a59;
+  --color-ivory: #fffaf7;
+  --color-nude: #f8e9e3;
+  --color-espresso: #59433f;
+  --color-champagne: #bb8c75;
   --font-sans: var(--font-body);
   --font-serif: var(--font-display);
 }
 :root {
-  --ivory: #fbf6f0;
+  --ivory: #fffaf7;
   --paper: #fffcf8;
-  --nude: #f0e2d8;
-  --espresso: #34231e;
-  --muted: #74645a;
-  --champagne: #b58a59;
-  --line: #ded0c4;
+  --nude: #f8e9e3;
+  --espresso: #59433f;
+  --muted: #76635e;
+  --champagne: #bb8c75;
+  --line: #ecddd5;
   --display: var(--font-display), Georgia, serif;
 }
 * {
@@ -83,7 +83,7 @@ h3 {
 }
 em {
   font-weight: 400;
-  color: #967148;
+  color: #a27363;
 }
 svg {
   flex-shrink: 0;
@@ -101,11 +101,11 @@ button:focus-visible,
 summary:focus-visible {
   outline: 3px solid #8a633d;
   outline-offset: 5px;
-  border-radius: 3px;
+  border-radius: 20px;
 }
 ::selection {
   background: #dfc2a1;
-  color: #34231e;
+  color: #59433f;
 }
 .container {
   max-width: 1280px;
@@ -179,7 +179,7 @@ summary:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  border-radius: 3px;
+  border-radius: 999px;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -195,13 +195,14 @@ summary:focus-visible {
   height: 17px;
 }
 .button-primary {
-  background: #6f4936;
-  color: #fffaf4;
-  border-color: #6f4936;
+  background: #efd2c9;
+  color: #65453e;
+  border-color: #efd2c9;
+  box-shadow: 0 5px 18px #c78f7b12;
 }
 .button-primary:hover {
-  background: #4f3124;
-  box-shadow: 0 4px 18px #34231e15;
+  background: #e7bfb5;
+  box-shadow: 0 4px 18px #59433f15;
 }
 .button-primary > svg:last-child {
   margin-left: 15px;

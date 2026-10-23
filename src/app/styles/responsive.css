@@ -233,14 +233,6 @@
   .section {
     padding-block: 65px;
   }
-  .announcement {
-    font-size: 8px;
-    padding: 7px 10px;
-    gap: 0;
-  }
-  .announcement > span {
-    display: none;
-  }
   .header-inner {
     min-height: 80px;
   }
@@ -288,7 +280,7 @@
     background: #fffcf8;
     border: 1px solid #dac6b1;
     width: 240px;
-    box-shadow: 0 12px 35px #34231e1a;
+    box-shadow: 0 12px 35px #59433f1a;
     display: grid;
     padding: 10px 20px;
   }
@@ -367,7 +359,7 @@
     object-fit: cover;
   }
   .hero-portrait::before {
-    background: linear-gradient(0deg, #f0e3d6 0%, #f0e3d600 22%);
+    background: linear-gradient(0deg, #f8eae4 0%, #f8eae400 22%);
   }
   .portrait-caption {
     right: 16px;

@@ -32,6 +32,13 @@ test("catálogo mantém todos os preços confirmados e a unidade de conserto", (
 test("páginas de serviço e portfólio apontam para fotos locais existentes", () => {
   for (const item of [...servicePages, ...gallery])
     assert.ok(existsSync(`public${item.image}`), item.image);
+  for (const asset of [
+    "amanda-acolhedora.webp",
+    "botanical-sticker.webp",
+    "polish-sticker.webp",
+    "style-comparison.webp",
+  ])
+    assert.ok(existsSync(`public/images/${asset}`), asset);
   for (const page of servicePages)
     assert.ok(services.some((item) => item.category === page.slug));
 });
