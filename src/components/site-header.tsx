@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BookingLink } from "./booking-link";
+import { MobileNav } from "./mobile-nav";
 
 export function Brand() {
   return (
@@ -36,27 +37,7 @@ export function SiteHeader() {
             ))}
           </nav>
           <BookingLink className="header-booking">Agendar horário</BookingLink>
-          <details className="mobile-nav">
-            <summary aria-label="Abrir navegação">
-              <span />
-              <span />
-            </summary>
-            <nav aria-label="Navegação móvel">
-              <Link href="/">Início</Link>
-              {links.map((link) => (
-                <Link href={link.href} key={link.href}>
-                  {link.label}
-                </Link>
-              ))}
-              <a
-                href="https://online.maapp.com.br/Amandacahnails"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Agendar horário ↗
-              </a>
-            </nav>
-          </details>
+          <MobileNav links={links} />
         </div>
       </header>
     </>

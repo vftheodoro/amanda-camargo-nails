@@ -17,3 +17,14 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - name: Verify routes and metadata
+        shell: bash
+        run: |
+          npm run start > /tmp/amanda-site.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in {1..30}; do
+            if curl --fail --silent http://localhost:3100/ > /dev/null; then break; fi
+            sleep 1
+          done
+          node scripts/verify-site.mjs

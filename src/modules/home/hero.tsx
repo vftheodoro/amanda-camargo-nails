@@ -14,8 +14,7 @@ export function Hero() {
           </p>
           <h1>
             Beleza em
-            <br />{" "}
-            cada <em>detalhe.</em>
+            <br /> cada <em>detalhe.</em>
           </h1>
           <p className="hero-description">
             Unhas sofisticadas, cuidado personalizado.

@@ -46,7 +46,7 @@ As fotos da galeria foram baixadas do Instagram profissional indicado pelo solic
 
 O retrato editorial foi editado por IA a partir desse retrato; monograma e textura decorativa foram gerados por IA. A galeria não utiliza unhas geradas. As imagens foram convertidas para WebP sem modificar o resultado dos serviços.
 
-Os scripts `prepare-images.mjs` e `prepare-brand.mjs` registram a preparação original e dependem dos arquivos locais da sessão de criação. Não são executados em CI ou na Vercel: todos os ativos finais necessários estão versionados em `public`.
+Todos os ativos finais necessários estão versionados em `public`; o build não depende de arquivos externos ou de acesso ao Instagram. Para preparar novas fotos: `node scripts/optimize-image.mjs caminho-da-foto nome-da-foto.webp 1200`. O script preserva a proporção e não amplia fotos pequenas.
 
 ## Publicação
 

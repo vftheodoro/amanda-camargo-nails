@@ -66,7 +66,7 @@
   letter-spacing: 0.12em;
   font-size: 8px;
   text-transform: uppercase;
-  color: #8b7565;
+  color: #765f4c;
   margin-top: 5px;
 }
 .gallery-preview .gallery-caption {
@@ -82,6 +82,7 @@
   margin-bottom: 35px;
 }
 .gallery-filters button {
+  min-height: 44px;
   border: 1px solid var(--line);
   background: transparent;
   padding: 9px 17px;

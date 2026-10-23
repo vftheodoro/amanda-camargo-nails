@@ -9,6 +9,18 @@
 
 O acesso ao provedor do domínio depende do titular. Não tratar a adição do domínio à Vercel como confirmação de DNS ou emissão do certificado.
 
+### Registros aplicados em 23/10/2026
+
+O Registro.br confirmou o salvamento destes apontamentos, com os servidores DNS atuais preservados:
+
+| Tipo | Nome | Destino |
+| --- | --- | --- |
+| A | @ | 216.198.79.1 |
+| A | @ | 64.29.17.1 |
+| CNAME | www | 875172ca2a42dc73.vercel-dns-017.com. |
+
+A Vercel já associa os dois domínios ao projeto, com redirecionamento 308 de www para o domínio principal. O domínio havia acabado de ser registrado e estava em transição no Registro.br; o salvamento não confirma propagação pública ou HTTPS. Conferir a resolução e o certificado após a propagação.
+
 ## Busca local
 
 - Verificar ou criar o Perfil da Empresa com Amanda como responsável.
