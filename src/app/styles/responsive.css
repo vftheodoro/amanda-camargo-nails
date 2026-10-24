@@ -164,7 +164,7 @@
   }
   .about-signature {
     font-size: 32px;
-    right: -22px;
+    right: 8px;
   }
   .about-caption {
     left: 5px;
@@ -492,8 +492,8 @@
     gap: 65px;
   }
   .about-visual {
-    max-width: 350px;
-    margin: 12px 35px 0 12px;
+    width: min(350px, calc(100% - 24px));
+    margin: 12px auto 0;
   }
   .about-photo {
     max-width: 350px;
@@ -503,12 +503,15 @@
     inset: -12px -13px 15px -12px;
   }
   .about-signature {
-    font-size: 35px;
-    right: -32px;
+    font-size: 30px;
+    right: 8px;
     bottom: 60px;
   }
   .about-caption {
-    left: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 100%;
     bottom: -25px;
     padding: 15px 23px;
     font-size: 10px;
