@@ -196,8 +196,7 @@
 .footer-credit {
   display: flex;
   justify-content: center;
-  padding: 24px 20px 32px;
-  border-top: 1px solid var(--line);
+  padding: 24px 20px 18px;
 }
 .bythe-credit {
   display: inline-flex;

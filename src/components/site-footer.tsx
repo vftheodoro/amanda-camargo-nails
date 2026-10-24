@@ -48,10 +48,6 @@ export function SiteFooter() {
             <p>Das 08h às 17h, com horário marcado.</p>
           </div>
         </div>
-        <div className="container footer-bottom">
-          <span>© {new Date().getFullYear()} Amanda Camargo Nails</span>
-          <span>Feito com cuidado, do primeiro ao último detalhe.</span>
-        </div>
         <div className="footer-credit">
           <a
             className="bythe-credit"
@@ -63,6 +59,10 @@ export function SiteFooter() {
             <span>Desenvolvido por</span>
             <Image src="/images/bythe-logo.svg" alt="Bythe" width={36} height={28} />
           </a>
+        </div>
+        <div className="container footer-bottom">
+          <span>© {new Date().getFullYear()} Amanda Camargo Nails</span>
+          <span>Feito com cuidado, do primeiro ao último detalhe.</span>
         </div>
       </footer>
       <a
