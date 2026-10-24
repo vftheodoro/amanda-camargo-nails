@@ -36,7 +36,8 @@ test("páginas de serviço e portfólio apontam para fotos locais existentes", (
     "amanda-acolhedora.webp",
     "botanical-sticker.webp",
     "polish-sticker.webp",
-    "style-comparison.webp",
+    "style-comparison-floral.webp",
+    "francesinha-dourada-flores.webp",
   ])
     assert.ok(existsSync(`public/images/${asset}`), asset);
   for (const page of servicePages)

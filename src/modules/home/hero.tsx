@@ -68,16 +68,16 @@ export function Hero() {
         <Link href="/galeria" className="hero-work">
           <div className="hero-work-image">
             <Image
-              src="/images/unhas-04.webp"
-              alt="Francesinha com flores e detalhes dourados, trabalho real de Amanda"
+              src="/images/francesinha-dourada-flores.webp"
+              alt="Um dos estilos mais pedidos de Amanda: unhas rosadas com francesinha dourada, flores brancas em relevo e estrelas"
               fill
               sizes="180px"
             />
           </div>
           <span>
-            Beleza que mora
+            Entre as mais
             <br />
-            nos detalhes <Icon name="arrow" />
+            pedidas <Icon name="arrow" />
           </span>
         </Link>
       </div>

@@ -46,7 +46,7 @@ export function ComparisonSlider() {
       >
         <div className="comparison-view comparison-after">
           <Image
-            src="/images/style-comparison.webp"
+            src="/images/style-comparison-floral.webp"
             alt=""
             fill
             sizes="(max-width: 760px) 180vw, 85vw"
@@ -61,7 +61,7 @@ export function ComparisonSlider() {
           style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
         >
           <Image
-            src="/images/style-comparison.webp"
+            src="/images/style-comparison-floral.webp"
             alt=""
             fill
             sizes="(max-width: 760px) 180vw, 85vw"
@@ -107,7 +107,7 @@ export function ComparisonSlider() {
             Ver antes
           </button>
           <span>
-            Natural <span aria-hidden="true">↔</span> Francesinha
+            Natural <span aria-hidden="true">↔</span> Flores e dourado
           </span>
           <button type="button" onClick={() => setPosition(0)}>
             Ver depois

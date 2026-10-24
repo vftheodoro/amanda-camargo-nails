@@ -21,15 +21,16 @@ export function InspirationSection() {
               aria-hidden="true"
             />
           </div>
-          <p className="eyebrow">Pequenos detalhes, novas possibilidades</p>
+          <p className="eyebrow">Um dos estilos mais pedidos por aqui</p>
           <h2 id="inspiration-title">
             Do seu natural
             <br />
             ao seu <em>próprio estilo.</em>
           </h2>
           <p>
-            Às vezes, tudo começa com uma cor suave. Uma francesinha delicada.
-            Um formato que faz você olhar para as mãos e sorrir.
+            Base rosada, francesinha branca e dourada, flores em relevo e um
+            toque de brilho. Uma combinação delicada e marcante, entre as
+            favoritas das clientes da Amanda.
           </p>
           <p>
             Explore essa inspiração de antes e depois e imagine os detalhes que
