@@ -122,16 +122,23 @@
   height: 16px;
 }
 .gallery-dialog {
-  max-width: 90vw;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  max-width: calc(100vw - 32px);
   width: 560px;
   padding: 0;
   border: 0;
   background: transparent;
-  overflow: visible;
-  max-height: 95dvh;
+  overflow: auto;
+  max-height: calc(100dvh - 32px);
+  overscroll-behavior: contain;
+}
+html:has(.gallery-dialog[open]) {
+  overflow: hidden;
 }
 .gallery-dialog::backdrop {
-  background: #24180fdf;
+  background: #392b29c9;
   backdrop-filter: blur(6px);
 }
 .dialog-card {
@@ -142,7 +149,7 @@
 }
 .dialog-image {
   position: relative;
-  height: min(70dvh, 650px);
+  height: min(70dvh, 650px, calc(100dvh - 160px));
   background: #f8e9e3;
 }
 .dialog-image img {
@@ -152,8 +159,8 @@
   position: absolute;
   right: 15px;
   top: 15px;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border: 1px solid #ecddd5;
   background: #fffaf7;
   color: #59433f;
@@ -174,12 +181,15 @@
   font-size: 21px;
 }
 .dialog-caption a {
-  font-size: 10px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 12px;
   text-decoration: underline;
 }
 .dialog-caption > button {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   background: none;
   border: 1px solid var(--line);
   border-radius: 50%;
