@@ -38,6 +38,8 @@ test("páginas de serviço e portfólio apontam para fotos locais existentes", (
     "polish-sticker.webp",
     "style-comparison-floral.webp",
     "francesinha-dourada-flores.webp",
+    "monogram-transparent.webp",
+    "bythe-logo.svg",
   ])
     assert.ok(existsSync(`public/images/${asset}`), asset);
   for (const page of servicePages)

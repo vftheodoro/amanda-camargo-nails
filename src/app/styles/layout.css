@@ -193,3 +193,38 @@
 .whatsapp-float:focus-visible span {
   opacity: 1;
 }
+.footer-credit {
+  display: flex;
+  justify-content: center;
+  padding: 24px 20px 32px;
+  border-top: 1px solid var(--line);
+}
+.bythe-credit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 9px 18px;
+  border: 1px solid #357b9b;
+  border-radius: 999px;
+  background: #104b6e;
+  color: #e0edff;
+  box-shadow: 0 4px 14px #082b4912;
+  transition: background 0.2s;
+}
+.bythe-credit span {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.site-footer .bythe-credit:hover {
+  background: #0a3555;
+  color: #e0edff;
+}
+.bythe-credit img {
+  width: 36px;
+  height: 28px;
+  object-fit: contain;
+}

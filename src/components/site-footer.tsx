@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { business } from "@/content/business";
 import { whatsappUrl } from "@/lib/links";
 import { Brand } from "./site-header";
@@ -50,6 +51,18 @@ export function SiteFooter() {
         <div className="container footer-bottom">
           <span>© {new Date().getFullYear()} Amanda Camargo Nails</span>
           <span>Feito com cuidado, do primeiro ao último detalhe.</span>
+        </div>
+        <div className="footer-credit">
+          <a
+            className="bythe-credit"
+            href="https://bythe.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Desenvolvido por Bythe — visitar bythe.tech"
+          >
+            <span>Desenvolvido por</span>
+            <Image src="/images/bythe-logo.svg" alt="Bythe" width={36} height={28} />
+          </a>
         </div>
       </footer>
       <a
