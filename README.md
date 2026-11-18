@@ -57,3 +57,20 @@ Conectar este repositório ao projeto `amanda-camargo-nails` da equipe Bythe na 
 Previews Vercel recebem `noindex` e robots bloqueado através de `VERCEL_ENV`. Produção recebe canônicas para o domínio principal.
 
 Consultar `docs/LAUNCH.md` para DNS, indexação e verificações. O conteúdo não promete posição no Google, durabilidade fixa ou resultados de saúde.
+
+
+## Checklist técnico antes de alterações públicas
+
+1. Revisar o conteúdo de `src/content/business.ts`, `src/content/services.ts` e `src/content/gallery.ts` e confirmar aprovações do estabelecimento.
+2. Executar `npm run typecheck`, `npm test`, `npm run build` e `node scripts/verify-site.mjs`.
+3. Conferir links de agendamento, SEO, páginas legais, responsividade e navegação por teclado em uma versão de pré-visualização.
+4. Seguir [`docs/LAUNCH.md`](docs/LAUNCH.md) para configuração e validação de publicação, sem presumir que o site já esteja indexado.
+
+## Aspectos de engenharia demonstrados
+
+- Separação de conteúdo e interface com tipos TypeScript.
+- Rotas e metadados do Next.js App Router para páginas institucionais e serviços.
+- Componentes acessíveis para galeria e navegação, com atenção a movimento reduzido.
+- Verificações automatizadas de consistência do conteúdo e fluxo de build.
+
+A documentação não constitui autorização para reproduzir fotografias, depoimentos ou identidade visual do cliente fora deste projeto.
